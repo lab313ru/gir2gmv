@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{3708cafd-2e20-4de5-9671-fc34ee32accd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib\unzip">
+      <UniqueIdentifier>{9a6c01f7-4798-47d6-ad35-fb1966212f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gir">
+      <UniqueIdentifier>{49021f05-2ecb-4637-87a1-bd8a1f2d856c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gir\asm">
+      <UniqueIdentifier>{dc8ab8f3-ad3c-4da1-832b-80db99e8a037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gir\includes">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gmv">
+      <UniqueIdentifier>{77ddeac1-fc70-4916-b169-67afe865f36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmv\includes">
+      <UniqueIdentifier>{19d913b8-74e3-4d67-bfb1-9bc38588cd2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzio.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzReadCurrentFile.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzCloseCurrentFile.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzExtractCurrentFileTo.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzGetCurrentFileInfo.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzGoToFirstFile.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzip.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzLocal_GetEndHeader.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzOpen.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip\unzOpenCurrentFile.cpp">
+      <Filter>zlib\unzip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gir\config_gir.h">
+      <Filter>gir\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\crc32.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\deflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffixed.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\trees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\unzip\unzip.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\unzip\unzLocal.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.in.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\unzip\zipLocal.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="gir\gdinput_gir.h">
+      <Filter>gir\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="gir\gio_gir.h">
+      <Filter>gir\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="gir\grom_gir.h">
+      <Filter>gir\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="gir\movie_gir.h">
+      <Filter>gir\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="gir\state_gir.h">
+      <Filter>gir\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="gmv\movie_gmv.h">
+      <Filter>gmv\includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gir\gio_gir.asm">
+      <Filter>gir\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gir\nasmhead_gir.inc">
+      <Filter>gir\asm</Filter>
+    </None>
+  </ItemGroup>
+</Project>
