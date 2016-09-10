@@ -346,6 +346,8 @@ int main(int argc, char *argv[])
 {
 	if (argc < 2) return -1;
 
+    char *ext = strrchr(argv[1], '.');
+
 	GMOVIEFILEHDR girHeader;
 	GZFILE girMovie = NULL;
 	UINT frameCount = 0; // Number of frame elapsed since reset
@@ -354,7 +356,9 @@ int main(int argc, char *argv[])
 	typeMovie gmvMovie;
 
 	int status = StartPlayMovie(argv[1], girHeader, girMovie, g_save, g_sram);
-	RecordMovie(girHeader, gmvMovie, "output.gmv");
+	
+    sprintf(&ext[1], "gmv");
+    RecordMovie(girHeader, gmvMovie, argv[1]);
 
 	lastFrame = girHeader.dwFrames;
 	while (status != MOVIE_FINISHED)
@@ -366,7 +370,8 @@ int main(int argc, char *argv[])
 
 	if (girHeader.dwFlags & GMVF_USESTATE)
 	{
-		FILE *gst = fopen("output.gst", "wb");
+        sprintf(&ext[1], "gst");
+		FILE *gst = fopen(argv[1], "wb");
 		fwrite(g_save, 1, girHeader.uStateSize, gst);
 		fwrite(&status, 1, sizeof(lastFrame), gst); // special hack for gensRR
 		fclose(gst);
@@ -374,7 +379,8 @@ int main(int argc, char *argv[])
 
 	if (girHeader.dwFlags & GMVF_USESRAM)
 	{
-		FILE *srm = fopen("output.srm", "wb");
+        sprintf(&ext[1], "srm");
+		FILE *srm = fopen(argv[1], "wb");
 		fwrite(g_sram, 1, girHeader.uSRAMSize, srm);
 		fclose(srm);
 	}
