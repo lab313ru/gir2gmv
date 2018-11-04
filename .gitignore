@@ -7,3 +7,7 @@
 *.pdb
 *.tlog
 *.exe
+/.vs/girgmv/v15/.suo
+/.vs/girgmv/v15/Browse.VC.db
+/girgmv.VC.db
+/girgmv.vcxproj.user
